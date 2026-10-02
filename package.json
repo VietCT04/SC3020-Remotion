@@ -1,0 +1,28 @@
+{
+  "name": "sc3020-database-project1-motion-graphics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "render": "tsx scripts/write-manifests.ts && remotion render src/index.ts Master out/sc3020-remotion-master.mp4 --overwrite",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src scripts --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.405",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.405"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2"
+  }
+}
